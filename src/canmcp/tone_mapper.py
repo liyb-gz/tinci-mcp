@@ -28,18 +28,18 @@ TONE_TO_1056: dict[int, str] = {
 # 0243 System mapping (alternative representation)
 # - 3: High tones (tones 1, 2, 7)
 # - 0: Low falling tone (tone 4)
-# - 2: Mid tones (tones 3, 5, 8)
-# - 4: Low tones (tones 6, 9)
+# - 4: Mid tones (tones 3, 5, 8)
+# - 2: Low tones (tones 6, 9)
 TONE_TO_0243: dict[int, str] = {
     1: "3",
     2: "3",
     7: "3",
     4: "0",
-    3: "2",
-    5: "2",
-    8: "2",
-    6: "4",
-    9: "4",
+    3: "4",
+    5: "4",
+    8: "4",
+    6: "2",
+    9: "2",
 }
 
 ToneSystem = Literal["1056", "0243"]

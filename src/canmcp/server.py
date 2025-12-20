@@ -72,8 +72,8 @@ def get_tone_pattern(
     The 0243 system uses different digits but same groupings:
     - 3: High tones (tones 1, 2, 7)
     - 0: Low falling (tone 4)
-    - 2: Mid tones (tones 3, 5, 8)
-    - 4: Low tones (tones 6, 9)
+    - 4: Mid tones (tones 3, 5, 8)
+    - 2: Low tones (tones 6, 9)
     
     Args:
         text: Cantonese text to analyze

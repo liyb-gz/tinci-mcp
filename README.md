@@ -111,8 +111,8 @@ The 1056 and 0243 systems group Cantonese's 9 tones into 4 categories for matchi
 | ------------ | ---------- | ---------- | ----------- |
 | 1, 2, 7      | 1          | 3          | High tones  |
 | 4            | 0          | 0          | Low falling |
-| 3, 5, 8      | 5          | 2          | Mid tones   |
-| 6, 9         | 6          | 4          | Low tones   |
+| 3, 5, 8      | 5          | 4          | Mid tones   |
+| 6, 9         | 6          | 2          | Low tones   |
 
 Reference: [HK01 Article on Cantonese Lyric Writing](https://www.hk01.com/社區專題/118873/填詞其實唔難-粵語歌愛好者話你知填詞冷知識)
 
