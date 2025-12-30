@@ -10,10 +10,10 @@ from typing import Literal
 import ToJyutping
 from mcp.server.fastmcp import FastMCP
 
-from canmcp.tone_mapper import ToneSystem, analyze_tones
+from tinci_mcp.tone_mapper import ToneSystem, analyze_tones
 
 # Initialize the MCP server
-mcp = FastMCP("Cantonese Pronunciation Server")
+mcp = FastMCP("tinci-mcp")
 
 
 @mcp.tool()

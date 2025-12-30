@@ -1,6 +1,6 @@
-# Cantonese MCP Server (canmcp)
+# tinci-mcp (填詞)
 
-An MCP (Model Context Protocol) server that provides Cantonese pronunciation lookup and tonal pattern analysis for lyric writing.
+An MCP (Model Context Protocol) server for Cantonese lyric writing (粵語填詞), providing pronunciation lookup and tonal pattern analysis.
 
 ## Features
 
@@ -13,7 +13,7 @@ Requires Python 3.10+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
 # Clone or navigate to the project directory
-cd canmcp
+cd tinci-mcp
 
 # Install dependencies
 uv sync
@@ -24,7 +24,7 @@ uv sync
 ### Running the Server
 
 ```bash
-uv run canmcp
+uv run tinci-mcp
 ```
 
 ### Configuring with Claude Desktop
@@ -34,9 +34,9 @@ Add to your Claude Desktop configuration (`~/Library/Application Support/Claude/
 ```json
 {
     "mcpServers": {
-        "canmcp": {
+        "tinci-mcp": {
             "command": "uv",
-            "args": ["--directory", "/path/to/canmcp", "run", "canmcp"]
+            "args": ["--directory", "/path/to/tinci-mcp", "run", "tinci-mcp"]
         }
     }
 }
@@ -49,9 +49,9 @@ Add to your Cursor MCP settings:
 ```json
 {
     "mcpServers": {
-        "canmcp": {
+        "tinci-mcp": {
             "command": "uv",
-            "args": ["--directory", "/path/to/canmcp", "run", "canmcp"]
+            "args": ["--directory", "/path/to/tinci-mcp", "run", "tinci-mcp"]
         }
     }
 }
@@ -94,11 +94,11 @@ Analyze tonal patterns for lyric writing using the 1056 or 0243 system.
 ```json
 {
     "text": "你好",
-    "system": "1056",
-    "pattern": "51",
+    "system": "0243",
+    "pattern": "43",
     "breakdown": [
-        { "character": "你", "jyutping": "nei5", "tone": 5, "mapped": "5" },
-        { "character": "好", "jyutping": "hou2", "tone": 2, "mapped": "1" }
+        { "character": "你", "jyutping": "nei5", "tone": 5, "mapped": "4" },
+        { "character": "好", "jyutping": "hou2", "tone": 2, "mapped": "3" }
     ]
 }
 ```
